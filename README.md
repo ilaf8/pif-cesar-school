@@ -13,7 +13,7 @@ Este espaço centraliza os artefatos, soluções práticas em C e respostas teó
 ## 📁 Estrutura de Pastas
 
 ```text
-.
+
 ├── README.md
 └── Lista-Cap1/
     ├── Respostas em Escrito.md
