@@ -1,61 +1,51 @@
 # Programação Imperativa e Funcional (PIF) — CESAR School
 
-Repositório dedicado ao armazenamento, organização e entrega de atividades da disciplina de **Programação Imperativa e Funcional (PIF - 2026.2)** da **CESAR School**, ministrada pelo professor **Danilo Farias Soares da Silva**.
+Repositório com minhas atividades da disciplina de **Programação Imperativa e Funcional (PIF — 2026.2)** da **CESAR School**, ministrada pelo professor **Danilo Farias Soares da Silva**.
 
-## 📂 Sobre o Repositório
+As listas seguem os capítulos do livro *Treinamento em Linguagem C*, de Victorine Viviane Mizrahi.
 
-Este espaço centraliza os artefatos, soluções práticas em C e respostas teóricas referentes às listas de exercícios e atividades desenvolvidas ao longo do semestre. As entregas são organizadas em pastas específicas para cada capítulo da disciplina.
+## Listas de exercícios
 
-* **Arquivo Principal de Respostas:** [`/Lista-Cap1/Respostas em Escrito.md`](https://www.google.com/search?q=./Lista-Cap1/Respostas%2520em%2520Escrito.md)
+| Lista | Conteúdo | Códigos | Respostas escritas |
+| --- | --- | --- | --- |
+| Capítulo 1 | Conceitos básicos de C, estrutura de programas, variáveis, constantes, tipos e bibliotecas. | [Lista-Cap1](Lista-Cap1/) | [Respostas do Capítulo 1](Respostas%20em%20Escrito.md) |
+| Capítulo 2 | Entrada de dados, operadores, conversão de tipos, incrementos e expressões aritméticas, relacionais e lógicas. | [Lista-Cap2](Lista-Cap2/) | [Respostas do Capítulo 2](Lista-Cap2/Respostas%20em%20Escrito.md) |
+| Capítulo 3 | Estruturas de repetição, `break`, `continue`, escopo de variáveis, acumuladores, sequências numéricas, laços aninhados e números aleatórios. | [Lista-Cap3](Lista-Cap3/) | [Respostas do Capítulo 3](Lista-Cap3/respostas.md) |
 
----
+## Organização dos arquivos
 
-## 📁 Estrutura de Pastas
+Cada lista tem sua própria pasta, com um arquivo `.c` para cada questão de código. Os programas são independentes e devem ser compilados separadamente.
 
-```text
+- **Lista-Cap1:** códigos das questões do Capítulo 1 e arquivos de complemento. As respostas escritas estão no arquivo `Respostas em Escrito.md`, na raiz do repositório.
+- **Lista-Cap2:** códigos das questões 2, 3 e 7 a 28, junto do arquivo `Respostas em Escrito.md` com as respostas escritas.
+- **Lista-Cap3:** códigos das questões 7 a 28, junto do arquivo `respostas.md` com as respostas teóricas e a explicação da questão 7.
 
-├── README.md
-└── Lista-Cap1/
-    ├── Respostas em Escrito.md
-    ├── exercicio01.c
-    ├── exercicio02.c
-    └── exercicio03.c
+## Ferramentas utilizadas
 
-```
+- Linguagem C para os exercícios.
+- GCC / MinGW para compilar os programas.
+- VS Code para escrever e executar os códigos.
+- Markdown para as respostas escritas e a documentação.
 
-* **`/Lista-Cap1`**: Conceitos Básicos em Linguagem C (*Treinamento em Linguagem C* — Victorine Viviane Mizrahi). Foco em estrutura de programas, diretivas de pré-processador, `printf()`, variáveis, constantes e modificadores de tipo.
+## Como compilar e executar
 
----
+Para baixar o repositório:
 
-## 🛠️ Tecnologias e Ferramentas
-
-* `C` para desenvolvimento dos exercícios práticos.
-* `GCC / MinGW` para compilação.
-* `VS Code` como ambiente de desenvolvimento.
-* `Markdown` para documentação das respostas teóricas.
-
----
-
-## 🚀 Como Visualizar e Executar
-
-1. Clone o repositório na sua máquina local:
-
-```bash
+```powershell
 git clone https://github.com/ilaf8/pif-cesar-school.git
-
+cd pif-cesar-school
 ```
 
-2. Acesse a pasta da lista desejada e compile qualquer exercício utilizando o `gcc`:
+Exemplo no Windows, usando a questão 7 da Lista 3:
 
-```bash
-cd Lista-Cap1
-gcc exercicio01.c -o exercicio01
-./exercicio01
-
+```powershell
+cd Lista-Cap3
+gcc -std=c11 -Wall -Wextra Questao7.c -o Questao7.exe
+.\Questao7.exe
 ```
 
----
+Para executar outra questão, basta trocar `Questao7.c` pelo nome do arquivo desejado e ajustar o nome do executável. Nos programas que recebem valores reais, use ponto para separar as casas decimais, como `7.5`.
 
-## 👤 Autor
+## Autor
 
-Desenvolvido por **[ilaf8](https://www.google.com/search?q=https://github.com/ilaf8)** — CESAR School.
+[ilaf8](https://github.com/ilaf8) — CESAR School.
